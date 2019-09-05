@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Media+Books</title>
+</head>
+<div id="wrapper">
+    <body>
+    <nav class="navigation">
+        <p class="menu-item"><a href="Index.html">Home</a></p>
+        <p class="menu-item"><a href="Anime.html">Anime</a></p>
+        <p class="menu-item"><a href="Books.html">Books</a></p>
+        <p class="menu-item"><a href="addSuggestions.html">Suggestions</a></p>
+
+    </nav>
+   <br/>
+    <br/>
+    <br/>
+    <div class="main">
+        <form id="SuggestionForm">
+            Book<input type="radio" name="bool" value="book" required/>
+            Anime<input type="radio" name="bool" value="anime"/>
+            <br/>
+            Title of Book or Anime<input type="text" name="Title" required />
+            <br/>
+        <select id="Categories" required>
+            <option value="">None</option>
+            <option value="life" name="category">life</option>
+            <option value="fantasy" name="category">fantasy</option>
+            <option value="sciFi" name="category">Sci-Fi</option>
+            <option value="Sports" name="category">Sports</option>
+        </select>
+
+        <input type="submit" />
+    </form>
+    </div>
+    </body>
+</div>
+</html>
