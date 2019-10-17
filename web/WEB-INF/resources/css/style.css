@@ -1,0 +1,74 @@
+
+
+.navigation {
+    margin: auto auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+float:left;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: lightblue;
+}
+.menu-item {
+    border: 1px solid black;
+    background-color: darkslateblue;
+    border-right: 1px solid #bbb;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size:50px
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:last-child {
+    border-right: none;
+}
+
+.menu-item:hover, .active, .selected {
+    background-color: #4CAF50;
+}
+
+.category{
+    margin:auto;
+   border:solid darkblue 10px ;
+    float: left;
+    font-size: 50px;
+    text-align:left;
+
+}
+#animeDesc{
+    font-size: 35px;
+    float:left
+
+}
+#wrapper{
+     margin-left:auto;
+    margin-right:auto;
+    width: 25%;
+    min-width:980px;
+    box-shadow: 5px 5px 5px darkgreen;
+    background-color: lightblue;
+
+}
+.title{
+    font-size: 50px;
+    margin:auto;
+    float:left;
+    text-align:left;
+}
+
+#SuggestionForm{
+    float:left;
+    font-size: 30px;
+
+}
