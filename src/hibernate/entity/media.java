@@ -1,6 +1,7 @@
 package hibernate.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="Media")
@@ -22,12 +23,15 @@ public class media {
     @JoinColumn(name = "CATEGORYID")
     private category category;
 
+    @NotNull(message="Need Title")
     @Column(name="TITLE")
     private String title;
 
+    @NotNull(message="Need Year of Make")
     @Column(name="YEAROFMAKE")
     private int yearofMake;
 
+    @NotNull(message="Need Who made it")
     @Column(name="MAKER")
     private String maker;
 

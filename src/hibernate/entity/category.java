@@ -17,7 +17,7 @@ public class category {
 
     //one to many, with category being able to bind to multiple media, but only allowing one category
     //for each media.
-    @OneToMany(cascade = CascadeType.ALL,
+    @OneToMany( cascade = CascadeType.ALL, fetch = FetchType.EAGER,
             mappedBy = "category")
     private List<media> mediaList;
 

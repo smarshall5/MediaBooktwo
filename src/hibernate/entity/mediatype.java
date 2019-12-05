@@ -13,12 +13,13 @@ public class mediatype {
     @Column(name = "MediaTypeID")
     private int mediaTypeId;
 
+
     @Column(name="NAME")
     private String Name;
 
 
     //one mediaType to many in media
-    @OneToMany(cascade = CascadeType.ALL,
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,
     mappedBy = "mediaType")
     private List<media> mediaList;
 
